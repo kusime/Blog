@@ -1,0 +1,186 @@
+{
+
+     "vim code":{
+		"prefix": "vim",
+		"body": [
+			"```vim",
+			"$0",
+			"```"
+			
+		],
+		"description": "vim code"
+	 },
+
+	 "yaml code":{
+		"prefix": "yml",
+		"body": [
+			"```yml",
+			"$0",
+			"```"
+			
+		],
+		"description": "yml code"
+	 },
+
+     "bash code":{
+		"prefix": "bash",
+		"body": [
+			"```bash",
+			"$0",
+			"```"
+		],
+		"description": "bash code"
+	 },
+
+	 "json code":{
+		"prefix": "json",
+		"body": [
+			"```json",
+			"$0",
+			"```"
+		],
+		"description": "json code"
+	 },
+
+	 "go code":{
+		"prefix": "go",
+		"body": [
+			"```go",
+			"$0",
+			"```"
+		],
+		"description": "go code"
+	 },
+	 "c code":{
+		"prefix": "c",
+		"body": [
+			"```vim",
+			"$0",
+			"```"
+			
+		],
+		"description": "c"
+	 },
+
+	 "conf code":{
+		"prefix": "conf",
+		"body": [
+			"```conf",
+			"$0",
+			"```"
+			
+		],
+		"description": "conf"
+	 },
+	 "cmd code":{
+		"prefix": "cmd",
+		"body": [
+			"```cmd",
+			"$0",
+			"```"
+			
+		],
+		"description": "cmd"
+	 },
+
+
+	 "pic":{
+		"prefix": "pic",
+		"body": [
+
+			"![图片描述]($1",
+			"$0"
+		],
+		"description": "pic"
+	 },
+
+	 "html code":{
+		"prefix": "html",
+		"body": [
+			"```html",
+			"$0",
+			"```"
+			
+		],
+		"description": "html"
+	 },
+
+	 "note-success":{
+		"prefix": "note-success",
+		"body": [
+			"{% note success %}",
+			"$0",
+			"{% endnote %}"
+		],
+		"description": "note-success"
+	 },
+
+	 "note-warning":{
+		"prefix": "note-warning",
+		"body": [
+			"{% note warning %}",
+			"$0",
+			"{% endnote %}"
+		],
+		"description": "note-warning"
+	 },
+
+	 "note-danger":{
+		"prefix": "note-danger",
+		"body": [
+			"{% note danger %}",
+			"$0",
+			"{% endnote %}"
+		],
+		"description": "note-danger"
+	 },
+
+	 "url":{
+		"prefix": "url",
+		"body": [
+			"[$0]($1)"
+		],
+		"description": "url snippet"
+	 },
+
+	 "checkbox":{
+		"prefix": "checkbox",
+		"body": [
+			"{% cb text, $1, true %}",
+			"$0"
+		],
+		"description": "checkbox snippet"
+	 },
+
+	 "Button":{
+		"prefix": "button",
+		"body": [
+			"{% btn 跳转链接, 显示的文字, 鼠标悬停时显示的文字 %}",
+			"$0"
+		],
+		"description": "Button snippet"
+	 },
+
+	"init":{
+		"prefix": "init",
+		"body": [
+
+		  	 "---",
+		   	"title: $0",
+			"index_img: $3",
+			"date: $CURRENT_YEAR-$CURRENT_MONTH-${CURRENT_DATE} $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND",
+			"tags:",
+			"  - $1",
+			"categories:",
+			"  - $2",
+			"---",
+			"",
+			"# $0"
+		],
+		"description": "init"
+	}
+
+	 
+
+	 
+}

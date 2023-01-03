@@ -1,0 +1,136 @@
+{
+    "go.autocompleteUnimportedPackages": true,
+    "go.lintTool": "golint",
+
+    "background.useDefault": false,
+    "background.useFront": false,
+    "files.autoSave": "afterDelay",
+    "windowColors.🌈 DeleteSettingsFileUponExit": true,
+    "windowColors.🌈 Theme": "light",
+    "files.autoSaveDelay": 100,
+    "editor.hover.delay": 1000,
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
+    "python.showStartPage": false,
+    "browser-preview.startUrl": "http://localhost:1313",
+
+    "[markdown]": {
+        "editor.wordWrap": "on",
+        "editor.quickSuggestions": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "pasteImage.basePath": "${projectRoot}/gallery/",
+    "explorer.confirmDelete": false,
+    "pasteImage.path": "${projectRoot}/gallery/",
+    "pasteImage.insertPattern": "![error_loading](/gallery/${imageFileName}${imageSyntaxSuffix}",
+    "pasteImage.filePathConfirmInputBoxMode": "onlyName",
+    "workbench.iconTheme": "material-icon-theme",
+    "code-runner.runInTerminal": true,
+    "python.defaultInterpreterPath": "/usr/bin/python",
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "markdown.extension.print.absoluteImgPath": false,
+    "prettier.endOfLine": "auto",
+    "markdown-table-formatter.globalColumnSizes": "Same Table Size",
+    "markdown-table-formatter.spacePadding": 2,
+    "markdown-table-formatter.limitLastColumnWidth": true,
+    "markdown-table-formatter.delimiterRowPadding": "Single Space Always",
+    "markdown-table-formatter.defaultTableJustification": "Center",
+    "markdown-table-formatter.removeColonsIfSameAsDefault": true,
+    "markdownShortcuts.languages": [
+        "markdown"
+    ],
+    "markdown-toc.insertAnchor": true,
+    "markdown.extension.tableFormatter.normalizeIndentation": true,
+    "markdown.extension.syntax.plainTheme": true,
+    "markdown.extension.print.imgToBase64": true,
+    "markdown.extension.orderedList.autoRenumber": false,
+    "markdown.extension.toc.unorderedList.marker": "+",
+    "markdown.extension.list.indentationSize": "inherit",
+    "markdown.extension.toc.updateOnSave": false,
+    "workbench.colorTheme": "Dark Atom Dark Green Cursor",
+    "editor.cursorStyle": "block",
+    "launch": {
+    
+        "configurations": [],
+        "compounds": []
+    },
+    "path-intellisense.autoSlashAfterDirectory": true,
+    "typescript.suggest.paths": false,
+    "better-comments.highlightPlainText": true,
+    "better-comments.tags": [
+    
+        {
+            "tag": "!",
+            "color": "#0bf9d5",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "#transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "?",
+            "color": "#3498DB",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "//",
+            "color": "#474747",
+            "strikethrough": true,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "todo",
+            "color": "#FF8C00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "*",
+            "color": "#98C379",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        }
+    ],
+    "color-manager.languages": [
+    "json"
+    ],
+    "workbench.startupEditor": "none",
+    "vlc.path": "/usr/bin/vlc",
+    "vlc.port": 4212,
+    "cSpell.userWords": [
+        "printf",
+        "pulseautio"
+    ],
+    "media.player": {
+        "players": [
+            {
+                "name": "cees",
+                "type": "vlc",
+                "password": "admin",
+                "port": 8080
+            }
+        ]
+    },
+    "go.toolsManagement.autoUpdate": true
+
+}
