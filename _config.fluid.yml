@@ -352,6 +352,7 @@ navbar:
     - { key: "tag", link: "/tags/", icon: "iconfont icon-tags-fill" }
     - { key: "about", link: "/about/", icon: "iconfont icon-user-fill" }
     - { key: "绘画", link: "/paint/", icon: "iconfont icon-pen" }
+    - { key: "链接库", link: "/links/", icon: "iconfont icon-books" }
 
 # 搜索功能，基于 hexo-generator-search 插件，若已安装其他搜索插件请关闭此功能，以避免生成多余的索引文件
 # Search feature, based on hexo-generator-search. If you have installed other search plugins, please disable this feature to avoid generating redundant index files
@@ -957,7 +958,6 @@ about:
   icons:
     - { class: "iconfont icon-github-fill", link: "https://github.com/kusime", tip: "虽然现在暂时没有像样的代码...不过之后会有的!!" }
     - { class: "iconfont icon-bilibili-fill", link: "https://space.bilibili.com/39202083", tip: "小破站的主页" }
-    - { class: "iconfont icon-qq-fill", qrcode: "/gallery/2021-08-24-00-13-51.png" }
 
 #---------------------------
 # 自定义页
