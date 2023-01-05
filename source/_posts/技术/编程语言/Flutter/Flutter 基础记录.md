@@ -365,3 +365,47 @@ emmm，就这么理解吧，Stateful Widget就是对Stateless Widget多了一层
 ![Stateful Widget vs Stateless Widget](/gallery/2023-01-06-07-22-47.png)
 
 
+
+
+# showModalBottomSheet
+
+```dart
+      showModalBottomSheet(
+          // we need the bCTX which comes from the MaterialApp Builder bCTX, since the showModalBottomSheet needs that bCTX and also will make some work on that !
+          context: bCTX,
+          builder: (_) {
+            // the builder should return widget 
+            return NewTrans(((Reason, Amount) {
+              addTransaction(Reason, Amount, bCTX);
+            }));
+          });
+```
+
+
+# 输入
+
+
+定义输入控制器,链接控制器,定义提交回调(optional)
+```dart
+final ReasonController = TextEditingController();
+final AmountController = TextEditingController();
+
+
+TextField(
+              controller: ReasonController,
+              decoration: InputDecoration(
+                labelText: 'Reason',
+              ),
+              onSubmitted: (_) =>
+                  {widget.cb(ReasonController.text, AmountController.text)},
+            ),
+```
+
+## controller
+
+这个会自动的处理用户输入,然后把他存储到 text对象成员里面去
+## decoration: InputDecoration
+
+修饰输入框样式,定义placeholder等
+## onSubmitted
+就是用户敲击回车后触发的,不是必选的
