@@ -1,7 +1,7 @@
 ---
-date:  2021-02-02  19:10:25
-updated:  2021-02-02  19:10:25
-title:  搭建 DHCP 服务器
+date: 2021-02-02  19:10:25
+updated: 2021-02-02  19:10:25
+title: 搭建 DHCP 服务器
 index_img: /gallery/2021-08-23-19-18-20.png
 tags:
   - Linux
@@ -9,7 +9,6 @@ tags:
 categories:
   - Linux
 ---
-
 
 ## 如何在 Linux 上搭建 DHCP 服务器？
 
@@ -93,7 +92,7 @@ subnet 10.1.0.0 netmask 255.255.0.0 {
 # set.
 #host fantasia {
 #  hardware ethernet 08:00:07:26:c0:a5;
-#  fixed-address fantasia.example.com;
+#  fixed-address fantasia.kusime.icu;
 #}
 
 # You can declare a class of clients and then do address allocation

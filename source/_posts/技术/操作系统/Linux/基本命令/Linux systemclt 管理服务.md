@@ -97,7 +97,7 @@ systemctl {mask|unmask} #屏蔽/取消屏蔽 （其实这个叫标记）
 systemctl show serviceName.service #查看服务配置细节
 systemctl-cgtop # 按 CPU、内存、输入和输出列出控制组
 systemclt set-default renlevel[3/5].target #设置多用户tty 、 图像界面 这里的效果和init 3、5是差不多的
-$ systemctl -H root@rhel7.example.com status httpd.service # 显示远程主机的某个 Unit 的状态
+$ systemctl -H root@rhel7.kusime.icu status httpd.service # 显示远程主机的某个 Unit 的状态
 ```
 
 # 查看 Unit 的状态
@@ -110,7 +110,7 @@ $ systemctl status
 $ ystemctl status bluetooth.service
 
 # 显示远程主机的某个 Unit 的状态
-$ systemctl -H root@rhel7.example.com status httpd.service
+$ systemctl -H root@rhel7.kusime.icu status httpd.service
 ```
 
 # Unit 的管理
@@ -211,7 +211,6 @@ $ sudo systemctl isolate multi-user.target
 - 默认的 RunLevel（在 /etc/inittab 文件设置）现在被默认的 Target 取代，位置是 /etc/systemd/system/default.target，通常符号链接到 graphical.target（图形界面）或者 multi-user.target（多用户命令行）
 - 启动脚本的位置，以前是 /etc/init.d 目录，符号链接到不同的 RunLevel 目录 （比如 /etc/rc3.d、/etc/rc5.d 等），现在则存放在 /lib/systemd/system 和 /etc/systemd/system 目录。
 - 配置文件的位置，以前 init 进程的配置文件是 /etc/inittab，各种服务的配置文件存放在 /etc/sysconfig 目录。现在的配置文件主要存放在 /lib/systemd 目录，在 /etc/systemd 目录里面的修改可以覆盖原始设置。
-
 
 # 日志管理
 
@@ -318,7 +317,7 @@ $ sudo journalctl --vacuum-time=1years
 - hostnamectl：用于查看和修改系统的主机名和主机信息
 - journalctl：用于查看系统日志和各类应用服务日志
 - localectl：用于查看和管理系统的地区信息
-- loginctl：用于管理系统已登录用户和 Session 的信息 
+- loginctl：用于管理系统已登录用户和 Session 的信息
 - machinectl：用于操作 Systemd 容器
 - timedatectl：用于查看和管理系统的时间和时区信息
 - systemd-analyze 显示此次系统启动时运行每个服务所消耗的时间，可以用于分析系统启动过程中的性能瓶颈

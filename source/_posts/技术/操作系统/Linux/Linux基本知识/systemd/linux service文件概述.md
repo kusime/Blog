@@ -10,7 +10,6 @@ categories:
   - Linux
 ---
 
-
 # 基本介绍
 
 - 服务（Service）类型的 Unit 文件（后缀为 .service）特有的，用于定义服务的具体管理和操作方法
@@ -139,10 +138,10 @@ ExecStartPre=-/usr/bin/docker kill apache%i
 ExecStartPre=-/usr/bin/docker rm apache%i
 ExecStartPre=/usr/bin/docker pull coreos/apache
 ExecStart=/usr/bin/docker run --name apache%i -p %i:80 coreos/apache /usr/sbin/apache2ctl -D FOREGROUND
-ExecStartPost=/usr/bin/etcdctl set /domains/example.com/%H:%i running
+ExecStartPost=/usr/bin/etcdctl set /domains/kusime.icu/%H:%i running
 ExecStop=/usr/bin/docker stop apache1
 ExecStopPost=/usr/bin/docker rm apache1
-ExecStopPost=/usr/bin/etcdctl rm /domains/example.com/%H:%i
+ExecStopPost=/usr/bin/etcdctl rm /domains/kusime.icu/%H:%i
 [Install]
 WantedBy=multi-user.target
 ```
