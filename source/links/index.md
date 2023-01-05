@@ -52,3 +52,7 @@ Windows 就是直接加对应的环境变量名字
 
 - [flutter 国内镜像源](https://www.jianshu.com/p/8e42604e1c00)
   {% endnote %}
+
+# 学习资源
+
+[GraphQL Crash Course With Full Stack MERN Project](https://www.youtube.com/watch?v=BcLNfwF04Kw&t=7s&ab_channel=TraversyMedia)
