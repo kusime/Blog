@@ -409,3 +409,66 @@ TextField(
 修饰输入框样式,定义placeholder等
 ## onSubmitted
 就是用户敲击回车后触发的,不是必选的
+
+# Widget 参数传递
+
+
+## StatelessWidget
+
+- unnamed , order will take into a place
+```dart
+// declare 
+class TransChart extends StatelessWidget {
+  final List<Transaction> transactions;
+  TransChart(this.transactions);
+  ...
+
+// passing
+TransChart(
+  transactions,
+),
+```
+
+- named
+
+```dart
+// declare
+class TransChart extends StatelessWidget {
+  final List<Transaction> transactions;
+  TransChart({required this.named}); // use required to avoid null check error
+..
+
+// passing
+
+TransChart(
+  named: transactions,
+),
+```
+
+
+## StatefulWidget
+在上面注册类上生命要用的参数,然后在下面使用widget来使用.
+![error_loading](/gallery/2023-01-06-09-04-08.png)
+
+
+# 列表数据映射到组件
+
+- 使用 ListView.builder 这种内置的转换组件
+```dart
+ ListView.builder(
+              itemCount: transactions.length,
+              itemBuilder: (context, index) {
+                final tx = transactions[index];
+                // Widget
+                return Card(
+                  child: Row(children: [ 
+                    ....
+```
+
+- 使用 Map 
+
+```dart
+List.map((){
+  ...
+}).toList()
+```
