@@ -84,3 +84,11 @@ users:
 opkg update
 opkg install git 
 ```
+
+
+## iptablet configuration
+
+```vim
+iptables -t nat -A POSTROUTING -s 192.168.2.2/30 -o eth1 -j MASQUERADE
+iptables -t nat -A POSTROUTING -s 192.168.0.0/22 -o eth1 -j MASQUERADE
+```
