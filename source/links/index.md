@@ -56,3 +56,8 @@ Windows 就是直接加对应的环境变量名字
 # 学习资源
 
 [GraphQL Crash Course With Full Stack MERN Project](https://www.youtube.com/watch?v=BcLNfwF04Kw&t=7s&ab_channel=TraversyMedia)
+
+
+## 人工智能
+
+[Papers with Code - The latest in Machine Learning](https://paperswithcode.com/)
